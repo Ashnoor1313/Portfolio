@@ -174,7 +174,7 @@ nav{
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
 }
 
-.btn{
+#download-btn{
     text-decoration: none;
     font-size: 15px;
     padding: 10px 20px;
@@ -185,9 +185,12 @@ nav{
     transition: all 0.5s ease;
 }
 
-.btn i{
+#download-btn i{
     margin-right: 10px;
 }
+#resume-pdf-link {
+    display: none;
+  }
 
 i{
     font-size: 16px;
@@ -272,11 +275,7 @@ i{
     object-fit: cover;
     
 }
-@keyframes imgFloat {
-    50%{
-        transform:translateY(50px);
-    }
-}
+
 
 /*------Main------*/
 
@@ -526,12 +525,6 @@ i{
     bottom: 0;
 }
 
-.project-box:hover.project-box i,
-.project-box:hover.project-box > h3,
-.project-box:hover.project-box > label {
-    color: #fff;
-    z-index: 2;
-}
 
 .top-header span {
     color: var(--text-color);
@@ -705,7 +698,7 @@ footer{
 
 /*-------------media query = 900px---------*/
 
-@media only screen and (mix-width: 900px) {
+@media only screen and (max-width: 900px) {
     .nav-menu-btn {
         display: none;
 
@@ -798,4 +791,10 @@ footer{
         margin-left: 60%;
     }
 
+}
+.btn{
+    background: #967aa1;
+    border-radius: 10%;
+    height: 50px;
+    width: 85px;
 }
